@@ -1,0 +1,7 @@
+class Broker {
+    void brokerage(String vegetable, int quantity) {
+        System.out.println("Broker handles " + quantity + " kg of " + vegetable);
+        Farmer farmer = new Farmer();
+        farmer.farm(vegetable, quantity);
+    }
+}
