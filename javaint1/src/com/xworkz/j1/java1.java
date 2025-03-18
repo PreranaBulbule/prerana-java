@@ -2,6 +2,6 @@ package com.xworkz.j1;
 
 public class java1 {
     public static void main(String[] args){
-        System.out.print("fdgffcbgc");
+        System.out.print("Hi x-workz folks");
     }
 }
