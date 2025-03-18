@@ -5,7 +5,7 @@ public class Runner {
         Display display = new Display();
         Shoping shoping = new Shoping();
         shoping.run(display);
-        System.out.println("  ");
+        System.out.println(" ");
 
     }
 }
