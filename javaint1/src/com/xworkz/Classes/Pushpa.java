@@ -13,7 +13,7 @@ public class Pushpa {
                 clip.hold();
             }
             else{
-                System.err.println("The value of clip is null");
+                System.out.println("The value of clip is null");
             }
         }
     }
