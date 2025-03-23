@@ -28,6 +28,7 @@ public class Virat {
         System.out.println("Virat is relaxing");
         ticket.buy();
         ticket.sell();
-        ticket.type();
+        ticket.type();  m
+            'm '
     }
 }
