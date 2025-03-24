@@ -3,7 +3,7 @@ package com.xworkz.Assignment;
 import java.util.Iterator;
 import java.util.List;
 
-public class Personnal {
+public class Personnel {
     String name;
     List<Skill> skills;
 
