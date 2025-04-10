@@ -15,4 +15,9 @@ public class Screen {
     public String toString() {
         return "Screen [type=" + type + ", size=" + size + " inches, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ScreenHashCode (from super): " + super.hashCode());
+        return 4200;
+    }
 }

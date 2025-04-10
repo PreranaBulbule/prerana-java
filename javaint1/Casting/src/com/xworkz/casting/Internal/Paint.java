@@ -16,4 +16,9 @@ public class Paint {
         return "Paint [brand=" + brand + ", color=" + color + ", price=" + price + "]";
     }
 
+    @Override
+    public int hashCode() {
+        System.out.println("PaintHashCode (from super): " + super.hashCode());
+        return 2500;
+    }
 }

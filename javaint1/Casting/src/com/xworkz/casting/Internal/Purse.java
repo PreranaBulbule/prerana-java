@@ -16,4 +16,9 @@ public class Purse {
             return "Purse [brand=" + brand + ", color=" + color + ", price=" + price + "]";
 
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PurseHashCode (from super): " + super.hashCode());
+        return 3400;
+    }
 }

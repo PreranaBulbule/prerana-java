@@ -15,4 +15,9 @@ public class Lock {
     public String toString() {
         return "Lock [material=" + material + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("LockHashCode (from super): " + super.hashCode());
+        return 1600;
+    }
 }

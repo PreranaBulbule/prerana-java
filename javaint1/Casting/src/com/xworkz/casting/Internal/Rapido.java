@@ -15,4 +15,9 @@ public class Rapido {
     public String toString() {
         return "Rapido [model=" + model + ", color=" + color + ", fare=" + fare + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("RapidoHashCode (from super): " + super.hashCode());
+        return 3500;
+    }
 }

@@ -15,5 +15,9 @@ public class Towel {
     public String toString() {
         return "Towel [brand=" + brand + ", material=" + material + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("TowelHashCode (from super): " + super.hashCode());
+        return 5800;
+    }
 }

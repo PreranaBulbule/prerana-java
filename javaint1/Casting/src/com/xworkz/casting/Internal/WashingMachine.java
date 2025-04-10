@@ -15,4 +15,9 @@ public class WashingMachine {
     public String toString() {
         return "WashingMachine [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("WashingMachineHashCode (from super): " + super.hashCode());
+        return 6300;
+    }
 }

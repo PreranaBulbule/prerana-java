@@ -15,4 +15,9 @@ public class Pencil {
     public String toString() {
         return "Pencil [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PencilHashCode (from super): " + super.hashCode());
+        return 2800;
+    }
 }

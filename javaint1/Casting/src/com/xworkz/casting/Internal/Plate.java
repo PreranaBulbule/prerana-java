@@ -15,4 +15,9 @@ public class Plate {
     public String toString() {
         return "Plate [material=" + material + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PlateHashCode (from super): " + super.hashCode());
+        return 3200;
+    }
 }

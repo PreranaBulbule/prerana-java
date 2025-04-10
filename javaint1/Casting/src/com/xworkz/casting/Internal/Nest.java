@@ -15,4 +15,9 @@ public class Nest {
     public String toString() {
         return "Nest [material=" + material + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("NestHashCode (from super): " + super.hashCode());
+        return 2300;
+    }
 }

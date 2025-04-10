@@ -15,4 +15,9 @@ public class Spoon {
     public String toString() {
         return "Spoon [material=" + material + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SpoonHashCode (from super): " + super.hashCode());
+        return 4800;
+    }
 }

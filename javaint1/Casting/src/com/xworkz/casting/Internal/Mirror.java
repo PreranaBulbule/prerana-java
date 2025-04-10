@@ -15,4 +15,9 @@ public class Mirror {
     public String toString() {
         return "Mirror [material=" + material + ", shape=" + shape + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("MirrorHashCode (from super): " + super.hashCode());
+        return 2000;
+    }
 }

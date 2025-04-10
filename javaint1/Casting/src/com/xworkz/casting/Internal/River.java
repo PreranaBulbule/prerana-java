@@ -15,5 +15,9 @@ public class River {
     public String toString() {
         return "River [name=" + name + ", country=" + country + ", length=" + length + " km]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("RiverHashCode (from super): " + super.hashCode());
+        return 3800;
+    }
 }

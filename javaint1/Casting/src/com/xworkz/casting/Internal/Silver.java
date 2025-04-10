@@ -15,4 +15,9 @@ public class Silver {
     public String toString() {
         return "Silver [purity=" + purity + ", weight=" + weight + " grams, pricePerGram=" + pricePerGram + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SilverHashCode (from super): " + super.hashCode());
+        return 4500;
+    }
 }

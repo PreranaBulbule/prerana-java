@@ -15,4 +15,9 @@ public class Spray {
     public String toString() {
         return "Spray [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SprayHashCode (from super): " + super.hashCode());
+        return 4900;
+    }
 }

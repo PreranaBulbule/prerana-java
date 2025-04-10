@@ -15,5 +15,9 @@ public class Zip {
     public String toString() {
         return "Zip [brand=" + brand + ", color=" + color + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("ZipHashCode (from super): " + super.hashCode());
+        return 6900;
+    }
 }

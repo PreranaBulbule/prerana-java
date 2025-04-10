@@ -15,5 +15,9 @@ public class Tab {
     public String toString() {
         return "Tab [brand=" + brand + ", model=" + model + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("TabHashCode (from super): " + super.hashCode());
+        return 5400;
+    }
 }

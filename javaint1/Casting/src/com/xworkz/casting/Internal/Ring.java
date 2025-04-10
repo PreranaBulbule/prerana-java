@@ -15,4 +15,9 @@ public class Ring {
     public String toString() {
         return "Ring [material=" + material + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("RingHashCode (from super): " + super.hashCode());
+        return 3700;
+    }
 }

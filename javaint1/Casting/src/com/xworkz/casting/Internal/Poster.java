@@ -15,4 +15,9 @@ public class Poster {
     public String toString() {
         return "Poster [theme=" + theme + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PosterHashCode (from super): " + super.hashCode());
+        return 3300;
+    }
 }

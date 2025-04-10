@@ -15,4 +15,9 @@ public class Watchman {
     public String toString() {
         return "Watchman [name=" + name + ", shift=" + shift + ", salary=" + salary + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("WatchmanHashCode (from super): " + super.hashCode());
+        return 6400;
+    }
 }

@@ -15,4 +15,9 @@ public class Paper {
     public String toString() {
         return "Paper [type=" + type + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PaperHashCode (from super): " + super.hashCode());
+        return 2600;
+    }
 }

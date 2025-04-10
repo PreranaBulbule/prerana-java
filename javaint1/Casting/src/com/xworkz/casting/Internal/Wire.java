@@ -15,4 +15,9 @@ public class Wire {
     public String toString() {
         return "Wire [material=" + material + ", length=" + length + " meters, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("WireHashCode (from super): " + super.hashCode());
+        return 6800;
+    }
 }

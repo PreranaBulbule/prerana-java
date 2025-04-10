@@ -15,4 +15,9 @@ public class Tape {
     public String toString() {
         return "Tape [type=" + type + ", length=" + length + " meters, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("TapeHashCode (from super): " + super.hashCode());
+        return 5600;
+    }
 }

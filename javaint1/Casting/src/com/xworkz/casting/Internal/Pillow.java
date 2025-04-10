@@ -15,5 +15,9 @@ public class Pillow {
     public String toString() {
         return "Pillow [brand=" + brand + ", material=" + material + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("PillowHashCode (from super): " + super.hashCode());
+        return 3000;
+    }
 }

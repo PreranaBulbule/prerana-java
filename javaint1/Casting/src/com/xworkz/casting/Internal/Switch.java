@@ -15,4 +15,9 @@ public class Switch {
     public String toString() {
         return "Switch [type=" + type + ", brand=" + brand + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SwitchHashCode (from super): " + super.hashCode());
+        return 5300;
+    }
 }

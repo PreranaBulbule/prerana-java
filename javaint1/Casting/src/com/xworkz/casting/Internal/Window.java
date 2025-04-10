@@ -15,4 +15,9 @@ public class Window {
     public String toString() {
         return "Window [material=" + material + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("WindowHashCode (from super): " + super.hashCode());
+        return 6700;
+    }
 }

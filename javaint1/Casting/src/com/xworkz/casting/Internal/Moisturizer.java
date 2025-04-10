@@ -15,4 +15,9 @@ public class Moisturizer {
     public String toString() {
         return "Moisturizer [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("MoisturizerHashCode (from super): " + super.hashCode());
+        return 2100;
+    }
 }

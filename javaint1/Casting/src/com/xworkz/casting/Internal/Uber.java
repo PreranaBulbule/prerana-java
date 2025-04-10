@@ -15,4 +15,9 @@ public class Uber {
     public String toString() {
         return "Uber [carModel=" + carModel + ", carColor=" + carColor + ", fare=" + fare + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("UberHashCode (from super): " + super.hashCode());
+        return 6100;
+    }
 }

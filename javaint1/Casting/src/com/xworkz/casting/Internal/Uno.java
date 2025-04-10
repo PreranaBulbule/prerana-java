@@ -15,4 +15,9 @@ public class Uno {
     public String toString() {
         return "Uno [edition=" + edition + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("UnoHashCode (from super): " + super.hashCode());
+        return 6200;
+    }
 }

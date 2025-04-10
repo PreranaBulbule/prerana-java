@@ -15,5 +15,9 @@ public class Lunchbox {
     public String toString() {
         return "Lunchbox [material=" + material + ", color=" + color + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("LunchboxHashCode (from super): " + super.hashCode());
+        return 1900;
+    }
 }

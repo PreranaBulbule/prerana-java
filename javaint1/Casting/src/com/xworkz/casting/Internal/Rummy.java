@@ -15,5 +15,9 @@ public class Rummy {
     public String toString() {
         return "Rummy [deckType=" + deckType + ", numberOfPlayers=" + numberOfPlayers + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("RummyHashCode (from super): " + super.hashCode());
+        return 3900;
+    }
 }

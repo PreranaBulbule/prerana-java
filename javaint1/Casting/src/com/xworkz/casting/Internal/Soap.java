@@ -15,4 +15,9 @@ public class Soap {
     public String toString() {
         return "Soap [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SoapHashCode (from super): " + super.hashCode());
+        return 4600;
+    }
 }

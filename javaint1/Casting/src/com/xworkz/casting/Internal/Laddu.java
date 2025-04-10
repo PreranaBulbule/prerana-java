@@ -15,5 +15,9 @@ public class Laddu {
     public String toString() {
         return "Laddu [name=" + name + ", type=" + type + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("LadduHashCode (from super): " + super.hashCode());
+        return 1500;
+    }
 }

@@ -15,4 +15,9 @@ public class Specs {
     public String toString() {
         return "Specs [brand=" + brand + ", frameMaterial=" + frameMaterial + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SpecsHashCode (from super): " + super.hashCode());
+        return 4700;
+    }
 }

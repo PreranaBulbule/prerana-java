@@ -15,4 +15,9 @@ public class Sweet {
     public String toString() {
         return "Sweet [name=" + name + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("SweetHashCode (from super): " + super.hashCode());
+        return 5200;
+    }
 }

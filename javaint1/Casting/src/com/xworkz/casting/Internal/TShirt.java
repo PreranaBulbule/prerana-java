@@ -15,4 +15,9 @@ public class TShirt {
     public String toString() {
         return "TShirt [brand=" + brand + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("TShirtHashCode (from super): " + super.hashCode());
+        return 5900;
+    }
 }

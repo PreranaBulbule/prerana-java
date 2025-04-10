@@ -15,4 +15,9 @@ public class Scale {
     public String toString() {
         return "Scale [material=" + material + ", length=" + length + " cm, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ScaleHashCode (from super): " + super.hashCode());
+        return 4100;
+    }
 }

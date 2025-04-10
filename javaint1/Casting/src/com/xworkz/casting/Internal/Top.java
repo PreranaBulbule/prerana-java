@@ -15,5 +15,9 @@ public class Top {
     public String toString() {
         return "Top [brand=" + brand + ", size=" + size + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("TopHashCode (from super): " + super.hashCode());
+        return 5700;
+    }
 }

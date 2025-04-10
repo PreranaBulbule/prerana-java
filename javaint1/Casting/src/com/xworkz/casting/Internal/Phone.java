@@ -15,5 +15,9 @@ public class Phone {
     public String toString() {
         return "Phone [brand=" + brand + ", model=" + model + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("PhoneHashCode (from super): " + super.hashCode());
+        return 2900;
+    }
 }

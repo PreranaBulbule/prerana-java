@@ -15,4 +15,9 @@ public class Ola {
     public String toString() {
         return "Ola [carModel=" + carModel + ", carColor=" + carColor + ", fare=" + fare + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("OlaHashCode (from super): " + super.hashCode());
+        return 2400;
+    }
 }

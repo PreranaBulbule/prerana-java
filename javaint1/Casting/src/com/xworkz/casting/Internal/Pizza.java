@@ -15,4 +15,9 @@ public class Pizza {
     public String toString() {
         return "Pizza [flavor=" + flavor + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("PizzaHashCode (from super): " + super.hashCode());
+        return 3100;
+    }
 }

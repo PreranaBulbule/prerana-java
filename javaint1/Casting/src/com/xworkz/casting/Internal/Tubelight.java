@@ -15,4 +15,9 @@ public class Tubelight {
     public String toString() {
         return "Tubelight [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("TubelightHashCode (from super): " + super.hashCode());
+        return 6000;
+    }
 }

@@ -15,4 +15,9 @@ public class NailPolish {
     public String toString() {
         return "NailPolish [brand=" + brand + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("NailPolishHashCode (from super): " + super.hashCode());
+        return 2200;
+    }
 }

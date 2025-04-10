@@ -15,5 +15,9 @@ public class Paste {
     public String toString() {
         return "Paste [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("PasteHashCode (from super): " + super.hashCode());
+        return 2700;
+    }
 }

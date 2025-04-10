@@ -15,4 +15,9 @@ public class Table {
     public String toString() {
         return "Table [name=" + name + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("TableHashCode (from super): " + super.hashCode());
+        return 5500;
+    }
 }

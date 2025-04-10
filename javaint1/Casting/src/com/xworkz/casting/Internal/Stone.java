@@ -15,5 +15,9 @@ public class Stone {
     public String toString() {
         return "Stone [type=" + type + ", color=" + color + ", weight=" + weight + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("StoneHashCode (from super): " + super.hashCode());
+        return 5100;
+    }
 }

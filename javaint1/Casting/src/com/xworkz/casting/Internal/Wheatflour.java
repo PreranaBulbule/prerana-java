@@ -15,4 +15,9 @@ public class Wheatflour {
     public String toString() {
         return "Wheatflour [brand=" + brand + ", packaging=" + packaging + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("WheatflourHashCode (from super): " + super.hashCode());
+        return 6600;
+    }
 }

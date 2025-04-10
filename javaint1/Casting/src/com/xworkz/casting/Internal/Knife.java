@@ -15,4 +15,9 @@ public class Knife {
     public String toString() {
         return "Knife [brand=" + brand + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("KnifeHashCode (from super): " + super.hashCode());
+        return 2700;
+    }
 }
