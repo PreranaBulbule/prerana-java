@@ -15,5 +15,9 @@ public class Bag {
     public String toString() {
         return "Bag [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("BagHashCode (from super): " + super.hashCode());
+        return 999; // custom constant for demonstration
+    }
 }

@@ -15,4 +15,9 @@ public class Bed {
     public String toString() {
         return "Bed [brand=" + brand + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BedHashCode (from super): " + super.hashCode());
+        return 555;
+    }
 }

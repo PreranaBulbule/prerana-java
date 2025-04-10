@@ -15,4 +15,9 @@ public class Basket {
     public String toString() {
         return "Basket [material=" + material + ", color=" + color + ", capacity=" + capacity + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BasketHashCode (from super): " + super.hashCode());
+        return 888;
+    }
 }
