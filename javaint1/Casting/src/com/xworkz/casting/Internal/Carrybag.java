@@ -15,5 +15,9 @@ public class Carrybag {
     public String toString() {
         return "Carrybag [material=" + material + ", color=" + color + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("CarrybagHashCode (from super): " + super.hashCode());
+        return 555;
+    }
 }

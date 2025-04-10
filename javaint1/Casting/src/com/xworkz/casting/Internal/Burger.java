@@ -15,4 +15,10 @@ public class Burger {
     public String toString() {
         return "Burger [type=" + type + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BurgerHashCode (from super): " + super.hashCode());
+        return 111;
+    }
+
 }

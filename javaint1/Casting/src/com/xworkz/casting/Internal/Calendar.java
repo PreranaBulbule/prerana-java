@@ -15,5 +15,9 @@ public class Calendar {
     public String toString() {
         return "Calendar [year=" + year + ", type=" + type + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("CalendarHashCode (from super): " + super.hashCode());
+        return 444;
+    }
 }

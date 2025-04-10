@@ -15,4 +15,9 @@ public class Bus {
     public String toString() {
         return "Bus [routeNumber=" + routeNumber + ", busType=" + busType + ", fare=" + fare + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BusHashCode (from super): " + super.hashCode());
+        return 222;
+    }
 }
