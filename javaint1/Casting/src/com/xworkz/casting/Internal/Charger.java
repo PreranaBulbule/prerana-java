@@ -15,4 +15,10 @@ public class Charger {
     public String toString() {
         return "Charger [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ChargerHashCode (from super): " + super.hashCode());
+        return 888;
+    }
+
 }

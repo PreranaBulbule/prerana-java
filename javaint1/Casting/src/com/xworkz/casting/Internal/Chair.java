@@ -15,5 +15,10 @@ public class Chair {
         public String toString() {
             return "Chair [type=" + type + ", material=" + material + ", price=" + price + "]";
         }
+    @Override
+    public int hashCode() {
+        System.out.println("ChairHashCode (from super): " + super.hashCode());
+        return 666;
+    }
     }
 

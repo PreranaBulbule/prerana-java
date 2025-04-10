@@ -15,5 +15,10 @@ public class Chicken {
     public String toString() {
         return "Chicken [type=" + type + ", cut=" + cut + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ChickenHashCode (from super): " + super.hashCode());
+        return 999;
+    }
 
 }

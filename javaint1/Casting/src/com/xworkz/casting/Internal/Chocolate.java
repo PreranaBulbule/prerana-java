@@ -15,4 +15,9 @@ public class Chocolate {
     public String toString() {
         return "Chocolate [brand=" + brand + ", flavor=" + flavor + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ChocolateHashCode (from super): " + super.hashCode());
+        return 1001;
+    }
 }

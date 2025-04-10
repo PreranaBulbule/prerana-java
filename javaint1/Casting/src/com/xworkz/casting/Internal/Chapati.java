@@ -15,4 +15,9 @@ public class Chapati {
     public String toString() {
         return "Chapati [type=" + type + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("ChapatiHashCode (from super): " + super.hashCode());
+        return 777;
+    }
 }
