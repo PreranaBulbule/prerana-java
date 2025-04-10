@@ -15,4 +15,9 @@ public class Brush {
     public String toString() {
         return "Brush [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BrushHashCode (from super): " + super.hashCode());
+        return 777;
+    }
 }

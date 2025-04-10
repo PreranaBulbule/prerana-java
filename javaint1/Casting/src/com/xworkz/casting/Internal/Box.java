@@ -15,4 +15,9 @@ public class Box {
     public String toString() {
         return "Box [material=" + material + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BoxHashCode (from super): " + super.hashCode());
+        return 999;
+    }
 }

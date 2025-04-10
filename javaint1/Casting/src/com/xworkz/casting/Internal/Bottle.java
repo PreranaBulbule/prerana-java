@@ -15,4 +15,9 @@ public class Bottle {
     public String toString() {
         return "Bottle [material=" + material + ", capacity=" + capacity + " liters, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BottleHashCode (from super): " + super.hashCode());
+        return 888;
+    }
 }

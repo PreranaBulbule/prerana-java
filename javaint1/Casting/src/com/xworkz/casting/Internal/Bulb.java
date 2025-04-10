@@ -15,4 +15,9 @@ public class Bulb {
     public String toString() {
         return "Bulb [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BulbHashCode (from super): " + super.hashCode());
+        return 999;
+    }
 }

@@ -15,4 +15,9 @@ public class Bucket {
     public String toString() {
         return "Bucket [material=" + material + ", capacity=" + capacity + " liters, price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BucketHashCode (from super): " + super.hashCode());
+        return 555;
+    }
 }
