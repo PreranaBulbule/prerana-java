@@ -15,4 +15,9 @@ public class Book {
     public String toString() {
         return "Book [title=" + title + ", author=" + author + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BookHashCode (from super): " + super.hashCode());
+        return 555;
+    }
 }

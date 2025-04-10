@@ -15,5 +15,9 @@ public class Bedsheet {
     public String toString() {
         return "Bedsheet [brand=" + brand + ", material=" + material + ", price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("BedsheetHashCode (from super): " + super.hashCode());
+        return 444;
+    }
 }

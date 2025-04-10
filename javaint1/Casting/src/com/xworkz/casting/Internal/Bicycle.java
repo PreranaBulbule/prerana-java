@@ -15,4 +15,9 @@ public class Bicycle {
     public String toString() {
         return "Bicycle [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BicycleHashCode (from super): " + super.hashCode());
+        return 222;
+    }
 }

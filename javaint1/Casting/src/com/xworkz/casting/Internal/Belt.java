@@ -15,4 +15,9 @@ public class Belt {
     public String toString() {
         return "Belt [material=" + material + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BeltHashCode (from super): " + super.hashCode());
+        return 333;
+    }
 }

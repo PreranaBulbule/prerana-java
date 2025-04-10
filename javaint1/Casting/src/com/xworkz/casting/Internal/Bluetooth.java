@@ -15,4 +15,9 @@ public class Bluetooth {
     public String toString() {
         return "Bluetooth [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("BluetoothHashCode (from super): " + super.hashCode());
+        return 666;
+    }
 }
