@@ -15,4 +15,9 @@ public class Jacket {
     public String toString() {
         return "Jacket [brand=" + brand + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("JacketHashCode (from super): " + super.hashCode());
+        return 2400;
+    }
 }

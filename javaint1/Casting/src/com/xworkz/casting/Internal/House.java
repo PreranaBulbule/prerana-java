@@ -15,4 +15,9 @@ public class House {
     public String toString() {
         return "House [address=" + address + ", numberOfRooms=" + numberOfRooms + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("HouseHashCode (from super): " + super.hashCode());
+        return 2200;
+    }
 }

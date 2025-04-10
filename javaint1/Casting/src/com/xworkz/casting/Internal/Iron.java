@@ -15,4 +15,9 @@ public class Iron {
     public String toString() {
         return "Iron [name=" + name + ", material=" + material + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("IronHashCode (from super): " + super.hashCode());
+        return 2300;
+    }
 }

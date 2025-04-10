@@ -15,4 +15,9 @@ public class Keyboard {
     public String toString() {
         return "Keyboard [name=" + name + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("KeyboardHashCode (from super): " + super.hashCode());
+        return 2600;
+    }
 }
