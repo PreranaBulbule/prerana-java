@@ -15,4 +15,9 @@ public class Game {
     public String toString() {
         return "Game [name=" + name + ", genre=" + genre + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("GameHashCode (from super): " + super.hashCode());
+        return 1800;
+    }
 }

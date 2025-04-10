@@ -15,4 +15,9 @@ public class Hat {
     public String toString() {
         return "Hat [brand=" + brand + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("HatHashCode (from super): " + super.hashCode());
+        return 2000;
+    }
 }

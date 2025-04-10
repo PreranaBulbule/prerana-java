@@ -15,4 +15,9 @@ public class Fish {
     public String toString() {
         return "Fish [species=" + species + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("FishHashCode (from super): " + super.hashCode());
+        return 2100;
+    }
 }

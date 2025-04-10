@@ -15,4 +15,9 @@ public class Groundnut {
     public String toString() {
         return "Groundnut [type=" + type + ", packaging=" + packaging + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("GroundnutHashCode (from super): " + super.hashCode());
+        return 1900;
+    }
 }

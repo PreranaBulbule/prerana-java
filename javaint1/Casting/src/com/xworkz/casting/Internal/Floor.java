@@ -15,5 +15,9 @@ public class Floor {
     public String toString() {
         return "Floor [material=" + material + ", color=" + color + ", pricePerSquareMeter=" + pricePerSquareMeter + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("FloorHashCode (from super): " + super.hashCode());
+        return 1001;
+    }
 }
