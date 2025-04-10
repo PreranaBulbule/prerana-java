@@ -15,4 +15,9 @@ public class Company {
     public String toString() {
         return "Company [name=" + name + ", industry=" + industry + ", revenue=" + revenue + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("CompanyHashCode (from super): " + super.hashCode());
+        return 1200;
+    }
 }

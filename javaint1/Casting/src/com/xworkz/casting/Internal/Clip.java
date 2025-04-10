@@ -15,4 +15,11 @@ public class Clip {
     public String toString() {
         return "Clip [brand=" + brand + ", color=" + color + ", price=" + price + "]";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("ClipHashCode (from super): " + super.hashCode());
+        return 1100;
+    }
+
 }

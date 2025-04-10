@@ -15,4 +15,9 @@ public class Desk {
         public String toString() {
             return "Desk [material=" + material + ", color=" + color + ", price=" + price + "]";
         }
+    @Override
+    public int hashCode() {
+        System.out.println("DeskHashCode (from super): " + super.hashCode());
+        return 1300;
+    }
 }

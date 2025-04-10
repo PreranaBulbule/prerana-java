@@ -15,5 +15,9 @@ public class Developer {
     public String toString() {
         return "Developer [name=" + name + ", programmingLanguage=" + programmingLanguage + ", salary=" + salary + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("DeveloperHashCode (from super): " + super.hashCode());
+        return 1400;
+    }
 }
