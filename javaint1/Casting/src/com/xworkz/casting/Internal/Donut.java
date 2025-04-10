@@ -15,5 +15,10 @@ public class Donut {
     public String toString() {
         return "Donut [flavor=" + flavor + ", size=" + size + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("DonutHashCode (from super): " + super.hashCode());
+        return 1600;
+    }
 
 }

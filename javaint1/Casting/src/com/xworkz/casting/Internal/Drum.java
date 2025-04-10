@@ -15,5 +15,9 @@ public class Drum {
     public String toString() {
         return "Drum [material=" + material + ", size=" + size + " inches, price=" + price + "]";
     }
-
+    @Override
+    public int hashCode() {
+        System.out.println("DrumHashCode (from super): " + super.hashCode());
+        return 1800;
+    }
 }

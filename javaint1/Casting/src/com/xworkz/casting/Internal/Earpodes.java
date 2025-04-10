@@ -15,4 +15,9 @@ public class Earpodes {
     public String toString() {
         return "Earpodes [brand=" + brand + ", type=" + type + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("EarpodesHashCode (from super): " + super.hashCode());
+        return 2000;
+    }
 }

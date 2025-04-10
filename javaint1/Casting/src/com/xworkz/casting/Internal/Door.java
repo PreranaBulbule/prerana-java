@@ -15,4 +15,9 @@ public class Door {
     public String toString() {
         return "Door [material=" + material + ", color=" + color + ", price=" + price + "]";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("DoorHashCode (from super): " + super.hashCode());
+        return 1700;
+    }
 }
