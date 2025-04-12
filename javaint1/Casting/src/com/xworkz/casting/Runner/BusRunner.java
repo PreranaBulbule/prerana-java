@@ -7,7 +7,17 @@ public class BusRunner {
         System.out.println(cityBus);
         System.out.println("Custom hashCode (overridden): " + cityBus.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(cityBus));
+
+        Bus bus1 = new Bus();
+        bus1.setRouteNumber("42B");
+
+        Bus bus2 = new Bus();
+        bus2.setRouteNumber("42B");
+
+        boolean same = bus1.equals(bus2);
+        System.out.println("Both same route number: " + same);
     }
 }
+
 
 

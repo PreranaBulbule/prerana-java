@@ -7,7 +7,17 @@ public class CarrybagRunner {
         System.out.println(reusableBag);
         System.out.println("Custom hashCode (overridden): " + reusableBag.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(reusableBag));
+
+        Carrybag bag1 = new Carrybag();
+        bag1.setMaterial("Cotton");
+
+        Carrybag bag2 = new Carrybag();
+        bag2.setMaterial("Cotton");
+
+        boolean same = bag1.equals(bag2);
+        System.out.println("Both same material: " + same);
     }
 }
+
 
 

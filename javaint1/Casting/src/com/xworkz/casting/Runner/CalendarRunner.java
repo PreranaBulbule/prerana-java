@@ -7,6 +7,16 @@ public class CalendarRunner {
         System.out.println(wallCalendar);
         System.out.println("Custom hashCode (overridden): " + wallCalendar.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(wallCalendar));
+
+        Calendar cal1 = new Calendar();
+        cal1.setYear("2025");
+
+        Calendar cal2 = new Calendar();
+        cal2.setYear("2025");
+
+        boolean same = cal1.equals(cal2);
+        System.out.println("Both same year: " + same);
     }
 }
+
 
