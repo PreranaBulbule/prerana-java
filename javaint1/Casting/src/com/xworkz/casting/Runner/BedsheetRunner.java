@@ -7,6 +7,16 @@ public class BedsheetRunner {
         System.out.println(cottonBedsheet);
         System.out.println("Custom hashCode (overridden): " + cottonBedsheet.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(cottonBedsheet));
+
+        Bedsheet bedsheet1 = new Bedsheet();
+        bedsheet1.setBrand("Home Centre");
+
+        Bedsheet bedsheet2 = new Bedsheet();
+        bedsheet2.setBrand("Home Centre");
+
+        boolean same = bedsheet1.equals(bedsheet2);
+        System.out.println("Both same brand: " + same);
     }
 }
+
 
