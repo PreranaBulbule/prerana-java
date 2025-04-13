@@ -7,7 +7,17 @@ public class ChargerRunner {
         System.out.println(samsungCharger);
         System.out.println("Custom hashCode (overridden): " + samsungCharger.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(samsungCharger));
+
+        Charger charger1 = new Charger();
+        charger1.setBrand("Samsung");
+
+        Charger charger2 = new Charger();
+        charger2.setBrand("Samsung");
+
+        boolean same = charger1.equals(charger2);
+        System.out.println("Both same brand: " + same);
     }
 }
+
 
 

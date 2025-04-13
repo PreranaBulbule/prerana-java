@@ -7,6 +7,16 @@ public class ChapatiRunner {
         System.out.println(wheatChapati);
         System.out.println("Custom hashCode (overridden): " + wheatChapati.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(wheatChapati));
+
+        Chapati chapati1 = new Chapati();
+        chapati1.setFlourType("Wheat");
+
+        Chapati chapati2 = new Chapati();
+        chapati2.setFlourType("Wheat");
+
+        boolean same = chapati1.equals(chapati2);
+        System.out.println("Both same flour type: " + same);
     }
 }
+
 

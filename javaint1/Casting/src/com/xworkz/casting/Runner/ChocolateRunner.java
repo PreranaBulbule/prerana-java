@@ -7,6 +7,16 @@ public class ChocolateRunner {
         System.out.println(dairyMilk);
         System.out.println("Custom hashCode (overridden): " + dairyMilk.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(dairyMilk));
+
+        Chocolate choco1 = new Chocolate();
+        choco1.setBrand("Cadbury");
+
+        Chocolate choco2 = new Chocolate();
+        choco2.setBrand("Cadbury");
+
+        boolean same = choco1.equals(choco2);
+        System.out.println("Both same brand: " + same);
     }
 }
+
 
