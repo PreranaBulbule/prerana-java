@@ -13,11 +13,43 @@ public class Towel {
 
     @Override
     public String toString() {
-        return "Towel [brand=" + brand + ", material=" + material + ", price=" + price + "]";
+        return "Towel{brand='" + brand + "', material='" + material + "', price=" + price + "}";
     }
+
     @Override
     public int hashCode() {
-        System.out.println("TowelHashCode (from super): " + super.hashCode());
-        return 5800;
+        System.out.println("Towel HashCode: " + super.hashCode());
+        return 67890; // Custom hashCode value
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Reference is not null");
+            if (obj instanceof Towel) {
+                System.out.println("Comparing Towel objects...");
+                Towel towel1 = this;
+                Towel towel2 = (Towel) obj;
+                if (towel1.brand.equals(towel2.brand) &&
+                        towel1.material.equals(towel2.material) &&
+                        towel1.price == towel2.price) {
+                    System.out.println("Both towels are identical.");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
