@@ -7,6 +7,16 @@ public class DeskRunner {
         System.out.println(officeDesk);
         System.out.println("Custom hashCode (overridden): " + officeDesk.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(officeDesk));
+
+        Desk d1 = new Desk();
+        d1.setMaterial("Wood");
+
+        Desk d2 = new Desk();
+        d2.setMaterial("Wood");
+
+        boolean same = d1.equals(d2);
+        System.out.println("Both same material: " + same);
     }
 }
+
 

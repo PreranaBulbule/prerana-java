@@ -7,5 +7,15 @@ public class ClipRunner {
         System.out.println(paperClip);
         System.out.println("Custom hashCode (overridden): " + paperClip.hashCode());
         System.out.println("Original identityHashCode: " + System.identityHashCode(paperClip));
+
+        Clip clip1 = new Clip();
+        clip1.setBrand("Staples");
+
+        Clip clip2 = new Clip();
+        clip2.setBrand("Staples");
+
+        boolean same = clip1.equals(clip2);
+        System.out.println("Both same brand: " + same);
     }
 }
+
