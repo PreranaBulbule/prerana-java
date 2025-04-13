@@ -13,11 +13,37 @@ public class Groundnut {
 
     @Override
     public String toString() {
-        return "Groundnut [type=" + type + ", packaging=" + packaging + ", price=" + price + "]";
+        return "Groundnut{type=" + type + ", packaging=" + packaging + ", price=" + price + "}";
     }
+
     @Override
     public int hashCode() {
-        System.out.println("GroundnutHashCode (from super): " + super.hashCode());
-        return 1900;
+        System.out.println("GroundnutHashCode: " + super.hashCode());
+        return 8321;  // Custom hash code value for Groundnut
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPackaging(String packaging) {
+        this.packaging = packaging;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Groundnut) {
+                System.out.println("have ref. will compare..");
+                Groundnut groundnut1 = this;
+                Groundnut groundnut2 = (Groundnut) obj;
+                if (groundnut1.type.equals(groundnut2.type) && groundnut1.packaging.equals(groundnut2.packaging) && groundnut1.price == groundnut2.price) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
