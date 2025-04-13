@@ -13,11 +13,37 @@ public class Lock {
 
     @Override
     public String toString() {
-        return "Lock [material=" + material + ", size=" + size + ", price=" + price + "]";
+        return "Lock{material=" + material + ", size=" + size + ", price=" + price + "}";
     }
+
     @Override
     public int hashCode() {
-        System.out.println("LockHashCode (from super): " + super.hashCode());
-        return 1600;
+        System.out.println("LockHashCode: " + super.hashCode());
+        return 5678;  // Custom hash code for Lock
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Lock) {
+                System.out.println("have ref. will compare..");
+                Lock lock1 = this;
+                Lock lock2 = (Lock) obj;
+                if (lock1.material.equals(lock2.material) && lock1.size.equals(lock2.size) && lock1.price == lock2.price) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
