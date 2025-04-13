@@ -13,11 +13,39 @@ public class Wire {
 
     @Override
     public String toString() {
-        return "Wire [material=" + material + ", length=" + length + " meters, price=" + price + "]";
+        return "Wire{material='" + material + "', length=" + length + " meters, price=" + price + "}";
     }
+
     @Override
     public int hashCode() {
-        System.out.println("WireHashCode (from super): " + super.hashCode());
-        return 6800;
+        return 98765;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Wire) {
+                Wire w1 = this;
+                Wire w2 = (Wire) obj;
+                if (w1.material.equals(w2.material) &&
+                        w1.length == w2.length &&
+                        w1.price == w2.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

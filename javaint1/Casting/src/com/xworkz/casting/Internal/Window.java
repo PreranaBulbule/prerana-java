@@ -13,11 +13,40 @@ public class Window {
 
     @Override
     public String toString() {
-        return "Window [material=" + material + ", type=" + type + ", price=" + price + "]";
+        return "Window{material='" + material + "', type='" + type + "', price=" + price + "}";
     }
+
     @Override
     public int hashCode() {
-        System.out.println("WindowHashCode (from super): " + super.hashCode());
-        return 6700;
+        System.out.println("Window hashCode: " + super.hashCode());
+        return 12345;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Window) {
+                Window w1 = this;
+                Window w2 = (Window) obj;
+                if (w1.material.equals(w2.material) &&
+                        w1.type.equals(w2.type) &&
+                        w1.price == w2.price) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
